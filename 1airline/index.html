@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дешёвые авиабилеты - FlightPool </title>
+    <link rel="shortcut icon" href="img/airplane.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+    
+    <div class="content">
+    <header class="head">
+        <div class="container">
+            <div class="head-header">
+                <a href="index.html"><img src="img/icon.png" alt="AirFlying" class="logo"></a>
+                <div class="buttons">
+                    <button class="button button-primary">
+                        <img src="img/sales.png" alt="" class="button-icon">
+                        <span class="button-text"><a href="#contact-window">Контакты</a></span>
+                    </button>
+                    <button class="button button-primary">
+                        <img src="img/phone.png" alt="" class="button-icon">
+                        <span class="button-text">Акции</span>
+                    </button>
+                    <button class="button button-primary" id="cart-button">
+                        <img src="img/user.png" alt="" class="button-icon" />
+                        <span class="button-text">Личный кабинет</span>
+                    </button>   
+                </div>
+                <div class="social-links">
+                    <a class="social-link" href="#"><img src="img/instagram.svg" alt="insta"></a>
+                    <a class="social-link" href="#"><img src="img/vk.svg" alt="fb"></a>
+                    <a class="social-link" href="#"><img src="img/facebook.svg" alt="tg"></a>
+                </div>
+            </div>
+            <div class="head-content"></div>
+        </div>
+    </header>
+    <div id="contact-window" class="animate__animated animate__slideInDown">
+        <div class="contact-titles">
+            <h2 class="contact-title">Контактная информация</h2> <a href="#" class="close">&times;</a>
+        </div>
+        <div class="contact-general-info">
+            <h4 class="general-title">Основные телефоны</h4>
+            <p class="contact-info">Автоответчик справочной +7(945)333-31-13</p>
+            <p class="contact-info-hint"> Наш бот подскажет вам по любому вопросу, используя номер базы данной, <br> который вы указали в броннировании.</p>
+            <p class="contact-info">Единая справочная +7(999)711-45-22</p>
+            <p class="contact-info-hint">Наши консультанты помогут вам, круглосуточно.</p>
+            <p class="contact-info">Служба контроля качества 8(800)222-33-44</p>
+            <p class="contact-info-hint">Если у вас возникли вопросы или притензии по поводу обслуживания.</p>
+        </div>
+        <div class="contact-other-info">
+            <h4 class="other-title">Адрес и обратная связь</h4>
+            <p class="other-info">Обращения по email: flightpool@gmail.com</p>
+            <p class="other-info">Юридический адрес: 140480, Россия, г.Курск, ул.2-я Агрегатная, 1а/18</p>
+        </div>
+      </div>
+    <div id="okno" class="animate__animated animate__backInDown">
+        Вы успешно забронировали билет!
+        Письмо будет отправлено вам на почту.<br>
+        <a href="#" class="close-window">&times;</a>
+      </div>
+    <section class="main">
+        <div class="container-main">
+            <div class="call">
+                <p class="call-text animate__animated animate__fadeInDown animate__delay-0,5s">Мы сближаем города, </p> <p class="call-texta animate__animated animate__fadeInDown animate__delay-1s">Вы - живете там, где хотите.</p>
+            </div>
+        </div>
+        
+        <div class="select-where">
+            <div class="buy-ticket">
+                <p class="buy-tickets-active">Покупка билета</p>
+                <p class="buy-tickets">Онлайн регистрация</p>
+                <p class="buy-tickets">Управление бронированием</p>
+            </div>
+            <!-- from -->
+            <div class="select-bg">
+            <input type="search" class="input" placeholder="Откуда">
+            <select class="selecta" >
+                <option value="1"> </option>
+                <option>Москва</option>
+                <option>Коломна</option>
+                <option>Питер</option>
+                <option>Канада</option>
+                <option>Китай</option>
+                <option>Корея</option>
+            </select>
+            <!-- where -->
+            <input type="search" class="input" placeholder="Куда">
+                <select class="selectb">
+                    <option value="2"> </option>
+                    <option>Москва</option>
+                    <option>Коломна</option>
+                    <option>Питер</option>
+                    <option>Канада</option>
+                    <option>Китай</option>
+                    <option>Корея</option>
+                </select>
+        <!-- when -->
+        <input type="date" placeholder="Когда" class="input">
+            <select class="input-pass">
+                <option>1 Пассажир</option>
+                <option> Эконом</option>
+                <option> Комфорт</option>
+                <option> Бизнес</option>
+                <option> Первый класс</option>
+            </select>
+            <button class="button-where">
+                  <a href="#okno">Забронировать билет</a>
+            </button>
+            </div>
+            
+        </div>
+    
+    <!-- slider -->
+    <div class="swiper projects-slider">
+        <h2 class="title-slider">Акции</h2>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide projects-slide">
+            <img src="img/promotion1.jpg" alt="Предварительный выбор места" class="project-image">
+            <div class="project-text">
+                <h3 class="project-title">Возварт и обмен билетов</h3>
+                <div class="project-time">
+    <div class="project-description">
+        <p class="project-paragraph">Пандемия изменила планы многих путешественников, но мы знаем, что она не будет длиться вечно.
+            Как только все это закончится, мы продолжим исследовать этот мир так, как мы привыкли.
+            </p>
+    </div>
+                </div>
+            </div>
+          </div>
+
+                <div class="swiper-slide projects-slide">                    
+            <img src="img/promotion2.jpg" alt="Повышение класса" class="project-image">
+            <div class="project-text">
+                <h3 class="project-title">Лучшие предложения</h3>
+                <div class="project-time">
+        <p class="project-paragraph">Снова увидеть улицы, которые так много видели. Обнять своих близких и оглянуться назад, чтобы увидеть,
+            через что вам пришлось пройти. И думать о новых мечтах, которые будут такими особенными!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide projects-slide">                    
+            <img src="img/promotion3.jpg" alt="Меню на заказ" class="project-image">
+            <div class="project-text">
+                <h3 class="project-title">Видеться чаще</h3>
+                <div class="project-time">
+        <p class="project-paragraph">С начала января мы расширяем географию полетов по России, чтобы вы могли
+            чаще видитесь с близкими. Выбирайте нашу компанию, чтобы лететь туда, где вас всегда ждут.</p>
+    </div>
+                </div>
+            </div>
+            <div class="swiper-slide projects-slide">                    
+                <img src="img/promotion4.jpg" alt="Меню на заказ" class="project-image">
+                <div class="project-text">
+                    <h3 class="project-title">Все снова включено</h3>
+                    <div class="project-time">
+            <p class="project-paragraph">С 10 августа возобновим полеты в Турцию. Рейсы из Москвы в Анталию будут выполняться дважды
+                в день ежедневно, а рейсы по маршруту Москва-Даламан будут выполняться от трех до семи раз в неделю.</p>
+        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+        <div class="projects-pagination"></div>
+      </div>
+      <div class="promo">
+      <div class="form">
+      <form action="#" class="contacts-form">
+        <h4 class="form-title">Можете подписаться на закрытые акции</h4>
+        <input type="email" required class="inputa input-mail" placeholder="Ваше email">
+        <button class="buttonb form-button">Подписаться</button>
+    </form>
+</div>
+    <div class="container-trust">
+        <div class="trust wow animate bounceIn">
+        <img src="img/trust.jpg" alt="Доверие" class="img-image">
+        <div class="trust-text ">
+        <h3 class="trust-title">Доверие</h3>
+        <p class="trust-paragraph">Нам доверяют по нескольким причинам:<br>
+        1. Возможность выбрать удобное время поездки.<br>
+        2. Возможность накопить больше 50% бронирований на рейс.<br>
+        3. Возможность получить снижение стоимости.</p>
+        </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img class="footer-images" src="img/icon.png" alt="">
+            <div class="footer-email"><p class="email">airpool@gmail.com</p></div>
+            <div class="footer-number"><p class="number">+7(901)905-38-39</p></div>
+        </div>
+        <div class="social-links">
+            <a class="social-link" href="#"><img src="img/instagram.svg" alt="insta"></a>
+            <a class="social-link" href="#"><img src="img/vk.svg" alt="fb"></a>
+            <a class="social-link" href="#"><img src="img/facebook.svg" alt="tg"></a>
+        </div>
+    </footer>
+
+    <!-- modal -->
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title">Регистрация</h3>
+                <button class="close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="foods-row">
+                    <input type="text" placeholder="Ваше имя" class="inputs input-name">
+                </div>
+                <div class="foods-row">
+                    <input type="text" placeholder="Ваша фамилия" class="inputs input-name">
+                </div>
+                <div class="foods-row">
+                    <input type="phone" placeholder="Номер телефона" class="inputs input-phone">
+                    </div>
+                    <div class="foods-row">
+                        <input type="text" placeholder="Пароль" class="inputs">
+                    </div>
+                </div>
+                <div class="foods-row">
+                    <button class="buttona form-button"> <a href="index.html">Регистрация</a> </button>
+                    </div>
+                </div>
+        </div>
+
+        </div>
+                </div>
+            </div>
+<script src="js/mains.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper', {
+        pagination: {
+    el: '.projects-pagination',
+    bulletClass: 'projects-bullet',
+    bulletActiveClass: 'projects-bullet-active',
+    clickable: true
+  },
+});
+</script>
+<script src="js/wow.js"></script>
+<script src="js/wow.min.js"></script>
+</body>
+</html>
